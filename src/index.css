@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root { height: 100%; }
+body {
+  @apply bg-mw-gray-50 text-mw-gray-800 font-sans antialiased;
+}
+
+/* MW utility classes */
+@layer components {
+  .mw-card {
+    @apply bg-white rounded-mw shadow-mw-card border border-mw-gray-200;
+  }
+  .mw-btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 h-10 rounded-mw-sm text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-mw-blue-500 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .mw-btn-primary { @apply mw-btn bg-mw-blue-500 text-white hover:bg-mw-blue-600; }
+  .mw-btn-secondary { @apply mw-btn bg-white text-mw-gray-700 border border-mw-gray-300 hover:bg-mw-gray-50; }
+  .mw-btn-ghost { @apply mw-btn text-mw-gray-700 hover:bg-mw-gray-100; }
+  .mw-btn-danger { @apply mw-btn bg-mw-red-500 text-white hover:opacity-90; }
+
+  .mw-input {
+    @apply w-full h-10 px-3 rounded-mw-sm border border-mw-gray-300 bg-white text-sm text-mw-gray-900 placeholder:text-mw-gray-400 focus:outline-none focus:ring-2 focus:ring-mw-blue-500 focus:border-mw-blue-500;
+  }
+  .mw-label { @apply block text-xs font-medium text-mw-gray-600 mb-1.5; }
+
+  .mw-badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  /* Toolbar controls (filter/date/export) */
+  .mw-toolbar-btn {
+    @apply inline-flex items-center gap-2 h-9 px-3 rounded-mw-sm text-sm font-medium text-mw-gray-700 bg-white border border-mw-gray-300 hover:bg-mw-gray-50 transition-colors;
+  }
+
+  /* Pro lock badge used in sidebar */
+  .mw-pro-badge {
+    @apply inline-flex items-center h-5 px-1.5 rounded-mw-sm text-[10px] font-semibold bg-mw-amber-100 text-mw-amber-500 gap-1;
+  }
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
