@@ -8,6 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      // Decode GitHub Pages SPA redirect (see public/404.html).
+      (function () {
+        var q = window.location.search;
+        if (q && q.indexOf('?p=/') === 0) {
+          var decoded = q.slice(3).split('&').map(function (kv) {
+            return kv.replace(/~and~/g, '&');
+          });
+          var path = decoded[0];
+          var extra = decoded.slice(1).join('&');
+          window.history.replaceState(
+            null,
+            '',
+            window.location.pathname.replace(/\/$/, '') + path + (extra ? '?' + extra.replace(/^q=/, '') : '') + window.location.hash
+          );
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
