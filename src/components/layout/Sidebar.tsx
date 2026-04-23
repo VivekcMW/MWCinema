@@ -7,7 +7,6 @@ import {
   CalendarRange,
   Megaphone,
   Plug,
-  BarChart3,
   Upload,
   Clapperboard,
   X,
@@ -43,10 +42,6 @@ const sections: Section[] = [
   {
     title: 'Integrations',
     items: [{ to: '/dsp', label: 'DSP Connectors', icon: <Plug size={16} /> }]
-  },
-  {
-    title: 'Analytics',
-    items: [{ to: '/reports', label: 'Reports', icon: <BarChart3 size={16} /> }]
   }
 ];
 

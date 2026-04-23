@@ -7,7 +7,6 @@ import NewCampaign from './pages/NewCampaign';
 import Theaters from './pages/Theaters';
 import Screens from './pages/Screens';
 import Movies from './pages/Movies';
-import Reports from './pages/Reports';
 import DSP from './pages/DSP';
 import ImportSchedule from './pages/ImportSchedule';
 
@@ -26,7 +25,6 @@ export default function App() {
         <Route path="/campaigns/new" element={<NewCampaign />} />
         <Route path="/campaign-targeting" element={<NewCampaign />} />
         <Route path="/dsp" element={<DSP />} />
-        <Route path="/reports" element={<Reports />} />
       </Route>
     </Routes>
   );

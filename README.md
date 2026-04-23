@@ -17,7 +17,6 @@ Static prototype UI for the CinemaAds cinema advertising platform, built with th
 - `/campaigns` All campaigns (tabbed: Live / Pending / Scheduled / Draft / Completed)
 - `/campaigns/new` 5-step wizard (Brief → Targeting → Inventory → Creative → Review)
 - `/dsp` DSP connectors
-- `/reports` Analytics
 
 ## Shared components (`src/components/ui`)
 `Button` · `Card` · `Badge` · `StatCard` · `ProgressBar` · `Field/Input/Select` · `DataTable` · `Stepper` · `PageHeader` · `Drawer` · `Tabs`
