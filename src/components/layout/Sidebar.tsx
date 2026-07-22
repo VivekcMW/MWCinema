@@ -1,13 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import {
-  LayoutDashboard,
-  Building2,
-  Monitor,
   Film,
   CalendarRange,
-  Megaphone,
-  Plug,
-  Upload,
   Clapperboard,
   X,
   ChevronsLeft,
@@ -21,27 +15,11 @@ interface Section {
 
 const sections: Section[] = [
   {
-    items: [{ to: '/', label: 'Dashboard', icon: <LayoutDashboard size={16} />, end: true }]
-  },
-  {
     title: 'Inventory',
     items: [
-      { to: '/theaters', label: 'Theaters', icon: <Building2 size={16} /> },
-      { to: '/screens', label: 'Screens', icon: <Monitor size={16} /> },
       { to: '/movies', label: 'Now Playing', icon: <Film size={16} /> },
-      { to: '/ad-slots', label: 'Ad Slots', icon: <CalendarRange size={16} /> },
-      { to: '/inventory/import', label: 'Import Schedule', icon: <Upload size={16} /> }
+      { to: '/ad-slots', label: 'Ad Slots', icon: <CalendarRange size={16} /> }
     ]
-  },
-  {
-    title: 'Campaigns',
-    items: [
-      { to: '/campaigns', label: 'All Campaigns', icon: <Megaphone size={16} /> }
-    ]
-  },
-  {
-    title: 'Integrations',
-    items: [{ to: '/dsp', label: 'DSP Connectors', icon: <Plug size={16} /> }]
   }
 ];
 
